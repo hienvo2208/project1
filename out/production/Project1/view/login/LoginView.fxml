@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="layoutParent" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.LoginViewController">
+   <children>
+        <AnchorPane fx:id="layersignup" prefHeight="500.0" prefWidth="632.0">
+            <children>
+                <AnchorPane fx:id="layer1" layoutX="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="491.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="lbSignIn" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="117.0" prefHeight="36.0" prefWidth="303.0" text="ĐĂNG NHẬP" textAlignment="CENTER" textFill="#262940">
+                            <font>
+                                <Font name="Verdana" size="30.0" />
+                            </font>
+                        </Label>
+                        <JFXButton fx:id="btnSignin" layoutX="186.0" layoutY="343.0" onAction="#btnSignIn_Click" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #262940; -fx-background-radius: 200; -fx-text-fill: white;" text="ĐĂNG NHẬP">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="60.0" layoutY="59.0" prefHeight="13.0" prefWidth="13.0">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="textUserLogin" layoutX="116.0" layoutY="189.0" prefHeight="32.0" prefWidth="258.0" promptText="Tên đăng nhập" text="">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="passUserLogin" layoutX="116.0" layoutY="239.0" prefHeight="32.0" prefWidth="258.0" promptText="Mật khẩu" text="">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></PasswordField>
+                  <Label fx:id="lbCreateAccount" alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="75.0" prefHeight="36.0" prefWidth="258.0" text="Create Account" textAlignment="CENTER" textFill="#262940">
+                     <font>
+                        <Font name="Arial" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textUserCreate" layoutX="117.0" layoutY="139.0" prefHeight="32.0" prefWidth="258.0" promptText="Username" />
+                  <TextField fx:id="textEmail" layoutX="117.0" layoutY="178.0" prefHeight="32.0" prefWidth="258.0" promptText="Email" />
+                  <TextField fx:id="passCreate" layoutX="117.0" layoutY="217.0" prefHeight="32.0" prefWidth="258.0" promptText="Password" />
+                  <JFXButton fx:id="btnSignup" layoutX="187.0" layoutY="404.0" onAction="#btnSignUp_Click" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #262940; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP" />
+                  <TextField fx:id="textFullName" layoutX="117.0" layoutY="260.0" prefHeight="32.0" prefWidth="258.0" promptText="Full Name" />
+                  <DatePicker fx:id="dateBirthday" layoutX="117.0" layoutY="298.0" prefHeight="32.0" prefWidth="258.0" promptText="Birthday" />
+                  <ComboBox fx:id="cbbType" layoutX="117.0" layoutY="341.0" prefHeight="32.0" prefWidth="258.0" promptText="Type of Readers" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="layer2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="309.0" style="-fx-background-image: url(&quot;file:resources/images/library_background.jpg&quot;); -fx-background-color: #262940;">
+         <children>
+            <AnchorPane layoutX="-14.0" layoutY="84.0" prefHeight="500.0" prefWidth="309.0" style="-fx-background-color: rgba(0,0,0,0.5);" AnchorPane.bottomAnchor="-84.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="84.0">
+               <children>
+                  <Label fx:id="lbLogin2" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="215.0" prefHeight="17.0" prefWidth="303.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbLogin3" alignment="CENTER" contentDisplay="CENTER" layoutY="246.0" prefHeight="39.0" prefWidth="309.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbLogin1" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="37.0" prefHeight="39.0" prefWidth="211.0" text="Quản lý thư viện" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Label fx:id="lbCreate1" alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="39.0" prefWidth="211.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbCreate2" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="173.0" prefHeight="23.0" prefWidth="267.0" text="You are a new member?" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="lbCreate3" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="215.0" prefHeight="23.0" prefWidth="173.0" text="Let's create new account!" textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton fx:id="btnSignInMove" layoutX="97.0" layoutY="260.0" onMouseClicked="#btnSignInMove_Click" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #262940; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN IN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSignupMove" layoutX="97.0" layoutY="260.0" onMouseClicked="#btnSignUpMove_Click" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #262940; -fx-border-radius: 200; -fx-border-color: white; -fx-background-radius: 200; -fx-text-fill: white;" text="SIGN UP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lbLogin21" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="176.0" prefHeight="17.0" prefWidth="303.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="7.0" onAction="#closeClick" onMouseEntered="#btnCloseMouseEnter" onMouseExited="#btnCloseMouseExit" prefHeight="14.0" prefWidth="13.0" style="-fx-background-radius: 300; -fx-background-color: #D6D6D6;" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="5.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fx:id="iconClose" glyphName="CLOSE" size="1.5em" visible="false" />
+               </graphic>
+            </JFXButton>
+         </children>
+        </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="QLTVdb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/database/QLTVdb.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

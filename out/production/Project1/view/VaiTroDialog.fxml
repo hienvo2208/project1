@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelMuon" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="713.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.QuyenController">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="28.0" prefWidth="471.0" style="-fx-label-padding: 0 0 0 10;" text="Thông tin các quyền hạn sử dụng phần mềm" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font name="Verdana Bold" size="18.0" />
+            </font></Label>
+      <TableView fx:id="tbQuyen" layoutX="29.0" layoutY="59.0" prefHeight="200.0" prefWidth="656.0" stylesheets="@css/tableTheme.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="59.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="127.0" text="Tên quyền hạn" />
+            <TableColumn fx:id="colCode" prefWidth="90.0" text="Mã code" />
+            <TableColumn fx:id="colDes" prefWidth="400.0" text="Mô tả" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

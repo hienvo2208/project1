@@ -1,0 +1,68 @@
+/*.buttonClose:hover{*/
+/*    -fx-background-color: #b73636;*/
+/*}*/
+
+/*.closeButton:hover{*/
+/*    -fx-opacity: 0.5;*/
+/*}*/
+
+.menuButton:hover{
+    -fx-background-color:  rgba(255,255,255, 0.1);;
+    -fx-background-radius:  25 0 0 25;
+    -fx-border-width:  0 3 0 0;
+    -fx-border-color: #4ba9e1;
+}
+
+/*.menuButton:focused{*/
+/*    -fx-background-color:  red;*/
+/*    -fx-background-radius:  25 0 0 25;*/
+/*    -fx-border-width:  0 3 0 0;*/
+/*    !*-fx-border-color: #d03a0b;*!*/
+/*    -fx-color-label-visible: #4ba9e1;*/
+/*}*/
+
+.tab{
+    -fx-background-color: white;
+    -fx-pref-height: 40;
+    -fx-background-radius: 5 5 0 0;
+    -fx-alignment: center;
+}
+
+.tab-header-background{
+    -fx-background-color: white;
+    -fx-background-radius: 5 5 0 0;
+}
+
+.label{
+    -fx-label-padding: 0 0 0 10;
+}
+
+.tab:selected{
+    -fx-background-color: #d2d2d2;
+    -fx-border-color: #d2d2d2;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 5 5 0 0;
+}
+
+.tab .tab-label{
+    -fx-text-fill: black;
+}
+
+.tab:focused{
+    -fx-focus-color: transparent;
+}
+
+.tab:selected .focus-indicator{
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.tab-pane:left *.tab-header-area{
+    -fx-background-insets: 0, 0 0 0;
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-background-radius: 5;
+}
+
+.headerMain{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0)
+}

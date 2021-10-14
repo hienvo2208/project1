@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panelMuon" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="713.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="28.0" prefWidth="216.0" style="-fx-label-padding: 0 0 0 10;" text="Thông tin phần mềm" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font></Label>
+      <Label contentDisplay="CENTER" layoutX="26.0" layoutY="60.0" prefHeight="17.0" prefWidth="216.0" style="-fx-label-padding: 0 0 0 10;" text="Giới thiệu" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon layoutX="14.0" layoutY="74.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="63.7142858505249" />
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="80.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="Hệ thống quản lý thư viện cung cấp những dịch vụ sau:" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="108.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Cho phép lưu trữ các thông tin đầu sách, đọc giả, nhân viên và cho phép mở rộng lượng tài liệu về sau." textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="143.0" prefHeight="50.0" prefWidth="661.0" style="-fx-label-padding: 0 0 0 10;" text="- Quản lý mượn, trả tài liệu, lập phiếu thu tiền phạt một cách dễ dàng, tính toàn và quản lý chính xác tổng nợ của đọc giả, thuận tiện cho thủ thư." textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="202.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Tìm kiếm thông tin tài liệu, độc giả một cách nhanh chóng, dễ dàng." textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="238.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Cho phép thống kê, in ấn báo cáo, thay đổi và quản lý quy định hiệu quả." textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="272.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Đối tượng sử dụng: đọc giả, quản lý, thủ thư, nhân viên thư viện." textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="272.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="26.0" layoutY="315.0" prefHeight="17.0" prefWidth="216.0" style="-fx-label-padding: 0 0 0 10;" text="Thông tin phần mềm" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="315.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon layoutX="14.0" layoutY="329.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="687.0" AnchorPane.topAnchor="318.7142858505249" />
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="342.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Phiên bản: 1.0" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="342.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="378.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Ngày hoạt động: 20/07/2020" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="378.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="413.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="- Bên cung cấp: SE" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="413.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="26.0" layoutY="460.0" prefHeight="17.0" prefWidth="216.0" style="-fx-label-padding: 0 0 0 10;" text="Liên hệ hỗ trợ" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="460.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon layoutX="14.0" layoutY="474.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="687.0" AnchorPane.topAnchor="463.7142858505249" />
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="490.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="Email: se@gmail.com" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="477.0" AnchorPane.topAnchor="490.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="524.0" prefHeight="28.0" prefWidth="685.0" style="-fx-label-padding: 0 0 0 10;" text="Số điện thoại: 0196.508.112" textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="477.0" AnchorPane.topAnchor="524.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

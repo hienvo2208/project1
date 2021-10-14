@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="663.0" prefWidth="1071.0" style="-fx-background-radius: 5;" stylesheets="@css/textFieldTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.AddPhieuMuonController">
+    <children>
+        <Pane fx:id="panelThemPM" layoutY="-1.0" prefHeight="27.0" prefWidth="631.0" style="-fx-background-color: #5a5a5a; -fx-background-radius: 5 5 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="labelThemSach" alignment="CENTER" layoutY="1.0" prefHeight="30.0" prefWidth="1071.0" text="THÊM PHIẾU MƯỢN" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                    </font>
+                </Label>
+            <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="9.0" layoutY="7.0" onAction="#btnCloseAction" onMouseEntered="#btnCloseMouseEnter" onMouseExited="#btnCloseMouseExit" prefHeight="14.0" prefWidth="13.0" style="-fx-background-radius: 300; -fx-background-color: #a6a6a6;">
+               <font>
+                  <Font size="5.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fx:id="iconClose" glyphName="CLOSE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            </children>
+        </Pane>
+        <Pane layoutY="312.0" prefHeight="40.0" prefWidth="631.0" style="-fx-background-color: #d2d2d2; -fx-background-radius: 0 0 5 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <JFXButton fx:id="btnHuy" layoutX="545.0" layoutY="7.0" onAction="#btnHuy_Click" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #d1e4f9;" text="HỦY">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></JFXButton>
+                <JFXButton fx:id="btnThem" layoutX="456.0" layoutY="7.0" onAction="#btnThem_Click" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #3ce02d;" text="THÊM">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></JFXButton>
+            </children></Pane>
+      <BorderPane layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1071.0" style="-fx-background-color: #d2d2d2;">
+         <center>
+            <TableView fx:id="tableSach" prefHeight="262.0" prefWidth="1051.0" style="-fx-background-radius: 5;" stylesheets="@css/tableTheme.css">
+               <columns>
+                  <TableColumn fx:id="colMaSach" prefWidth="84.0" text="Mã sách" />
+                  <TableColumn fx:id="colTenSach" prefWidth="173.0" text="Tên sách" />
+                  <TableColumn fx:id="colMaTheLoai" prefWidth="112.0" text="Thể loại" />
+                  <TableColumn fx:id="colMaTacGia" prefWidth="121.0" text="Tác giả" />
+                  <TableColumn fx:id="colNamXB" prefWidth="92.0" text="Năm XB" />
+                  <TableColumn fx:id="colNXB" prefWidth="117.0" text="NXB" />
+                  <TableColumn fx:id="colNgayNhap" prefWidth="129.0" text="Ngày nhập" />
+                  <TableColumn fx:id="colTriGia" prefWidth="109.0" text="Trị giá" />
+                  <TableColumn fx:id="colTinhTrang" prefWidth="113.0" text="Tình trạng" />
+               </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="328.0" prefWidth="1071.0" BorderPane.alignment="CENTER">
+               <center>
+                  <AnchorPane prefHeight="270.0" prefWidth="1051.0" style="-fx-background-color: grey; -fx-background-radius: 5;">
+                     <children>
+                        <TextField fx:id="textTimKiem" layoutX="855.0" layoutY="43.0" prefHeight="31.0" prefWidth="168.0" promptText="Tìm kiếm..." style="-fx-background-color: transparent;" styleClass="textFieldSearch" stylesheets="@css/themes.css" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="43.0">
+                           <font>
+                              <Font name="Verdana" size="13.0" />
+                           </font></TextField>
+                        <HBox layoutY="-2.0" prefHeight="40.0" prefWidth="1051.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 5 5 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" opacity="0.77" prefHeight="20.0" prefWidth="200.0" style="-fx-label-padding: 5 0 0 10;" text="THÔNG TIN CHI TIẾT">
+                                 <font>
+                                    <Font name="Verdana Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label layoutX="750.0" layoutY="50.0" text="Tìm kiếm theo tên:" AnchorPane.rightAnchor="202.0" AnchorPane.topAnchor="50.0">
+                           <font>
+                              <Font name="Verdana" size="13.0" />
+                           </font></Label>
+                        <AnchorPane layoutX="7.0" layoutY="80.0" prefHeight="242.0" prefWidth="1037.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="80.0">
+                           <children>
+                              <TableView fx:id="tbSachMuon" layoutX="491.0" layoutY="2.0" prefHeight="235.0" prefWidth="597.0" stylesheets="@css/tableTheme.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
+                                 <columns>
+                                    <TableColumn fx:id="colMaSachMuon" prefWidth="127.0" text="Mã sách" />
+                                    <TableColumn fx:id="colTenSachMuon" prefWidth="208.0" text="Tên sách" />
+                                    <TableColumn fx:id="colTheLoaiMuon" prefWidth="120.0" text="Thể loại" />
+                                    <TableColumn fx:id="colTacGiaMuon" prefWidth="141.0" text="Tác giả" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <JFXMasonryPane cellHeight="40.0" cellWidth="305.0" layoutX="25.0" layoutY="92.0" prefHeight="205.0" prefWidth="362.0" scaleShape="false" style="-fx-background-color: #cccccc; -fx-background-radius: 5;" stylesheets="@css/themes.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="664.0" AnchorPane.topAnchor="92.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="305.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" style="-fx-label-padding: 0 0 0 10;" text="Mã phiếu mượn">
+                                       <font>
+                                          <Font name="Verdana" size="13.0" />
+                                       </font></Label>
+                                    <TextField fx:id="txtMaPM" prefHeight="27.0" prefWidth="190.0">
+                                       <font>
+                                          <Font name="Verdana" size="13.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="305.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" text="Mã đọc giả">
+                                       <font>
+                                          <Font name="Verdana" size="13.0" />
+                                       </font></Label>
+                                    <ComboBox fx:id="cbMaDG" editable="true" prefHeight="27.0" prefWidth="190.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="305.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" text="Ngày mượn">
+                                       <font>
+                                          <Font name="Verdana" size="13.0" />
+                                       </font></Label>
+                                    <DatePicker fx:id="dtNgayMuon" onMouseClicked="#changeHanTra" prefHeight="27.0" prefWidth="190.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="305.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" text="Hạn trả">
+                                       <font>
+                                          <Font name="Verdana" size="13.0" />
+                                       </font></Label>
+                                    <DatePicker fx:id="dtHanTra" prefHeight="27.0" prefWidth="190.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </JFXMasonryPane>
+                        <JFXButton fx:id="btnThemSach" layoutX="7.0" layoutY="45.0" onAction="#btnThemSach_Click" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: #65D36E;" text="THÊM SÁCH">
+                           <font>
+                              <Font name="Verdana" size="13.0" />
+                           </font></JFXButton>
+                        <JFXButton fx:id="btnXoaSach" layoutX="122.0" layoutY="45.0" onAction="#btnXoaSach_Click" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: red;" text="XÓA SÁCH">
+                           <font>
+                              <Font name="Verdana" size="13.0" />
+                           </font></JFXButton>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <Pane prefHeight="8.0" prefWidth="1071.0" BorderPane.alignment="CENTER" />
+               </top>
+               <left>
+                  <Pane prefHeight="200.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane prefHeight="200.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <Pane prefHeight="10.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </bottom>
+         <top>
+            <Pane prefHeight="10.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefHeight="509.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layoutMuonTra" prefHeight="540.0" prefWidth="750.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.MenuHeThongController">
+    <children>
+      <AnchorPane layoutY="59.0" prefHeight="680.0" prefWidth="1043.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <AnchorPane prefHeight="309.0" prefWidth="274.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-radius: 5;" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <JFXButton fx:id="btnQuyDinh" contentDisplay="TOP" layoutX="30.0" layoutY="27.0" onAction="#btnQuyDinh_Click" prefHeight="89.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 1px; -fx-border-color: gray; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Quy định">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="SLIDERS" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPhanQuyen" contentDisplay="TOP" layoutX="146.0" layoutY="27.0" onAction="#btnPhanQuyen_Click" prefHeight="89.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 1px; -fx-border-color: gray; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Vai trò">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="USER_MD" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnGioiThieu" contentDisplay="TOP" layoutX="30.0" layoutY="137.0" onAction="#btnGioiThieu_Click" prefHeight="89.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 1px; -fx-border-color: gray; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Giới thiệu">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="QUESTION_CIRCLE" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="314.0" layoutY="3.0" prefHeight="473.0" prefWidth="413.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #fff; -fx-background-radius: 5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <BorderPane fx:id="paneHeThong" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneHeaderQLDG" layoutX="15.0" layoutY="1.0" prefHeight="49.0" prefWidth="730.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Label layoutX="64.0" layoutY="4.0" opacity="0.87" prefHeight="37.0" prefWidth="274.0" text="HỆ THỐNG" textFill="#3d4056">
+               <font>
+                  <Font name="Verdana" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgQLDG" fitHeight="37.0" fitWidth="48.0" layoutX="9.0" layoutY="4.0" opacity="0.69" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(&quot;file:resources/images/system.png&quot;);" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneDoiMatKhau" prefHeight="296.0" prefWidth="339.0" style="-fx-background-radius: 5;" stylesheets="@./css/textFieldTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.DoiMatKhauController">
+    <children>
+        <Pane fx:id="panelDMK" layoutY="-1.0" prefHeight="27.0" prefWidth="631.0" style="-fx-background-color: #5a5a5a; -fx-background-radius: 5 5 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="93.0" layoutY="2.0" text="ĐỔI MẬT KHẨU" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <GridPane layoutX="151.0" layoutY="46.0" prefHeight="200.0" prefWidth="631.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="316.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="144.0" text="Mật khẩu hiện tại:">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></Label>
+                  <PasswordField fx:id="textMatKhauHT" prefHeight="27.0" prefWidth="178.0">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></PasswordField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="297.0" GridPane.rowIndex="1">
+                    <children>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="145.0" text="Mật khẩu mới:">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></Label>
+                  <PasswordField fx:id="textMatKhauMoi" editable="false" prefHeight="27.0" prefWidth="178.0">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></PasswordField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="305.0" GridPane.rowIndex="2">
+                    <children>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="145.0" text="Nhập lại mật khẩu:">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></Label>
+                  <PasswordField fx:id="textNhapLaiMK" editable="false" prefHeight="27.0" prefWidth="178.0">
+                     <font>
+                        <Font name="Verdana" size="13.0" />
+                     </font></PasswordField>
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+        <Pane layoutY="312.0" prefHeight="40.0" prefWidth="631.0" style="-fx-background-color: #d2d2d2; -fx-background-radius: 0 0 5 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <JFXButton fx:id="btnDoi" disable="true" layoutX="92.0" layoutY="7.0" onAction="#btnDoiClicked" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #6DBCF5;" text="LƯU">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></JFXButton>
+                <JFXButton fx:id="btnHuy" layoutX="181.0" layoutY="7.0" onAction="#btnHuyClicked" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #d1e4f9;" text="HỦY">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></JFXButton>
+            </children></Pane>
+        <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="6.0" onAction="#btnCloseAction" onMouseEntered="#btnCloseMouseEnter" onMouseExited="#btnCloseMouseExit" prefHeight="14.0" prefWidth="13.0" style="-fx-background-radius: 300; -fx-background-color: #a6a6a6;">
+            <font>
+                <Font size="5.0" />
+            </font>
+            <graphic>
+                <FontAwesomeIcon fx:id="iconClose" glyphName="CLOSE" size="1.5em" />
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

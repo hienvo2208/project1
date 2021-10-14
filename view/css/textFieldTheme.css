@@ -1,0 +1,27 @@
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.textFieldSearch{
+    -fx-border-width:  0 0 1 0;
+    -fx-border-color: black;
+}
+
+.textFieldSearch:focused{
+    -fx-border-color: white;
+    -fx-border-width:  0 0 1 0;
+}
+
+.datePicker{
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+}
+
+.datePicker:focused{
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}

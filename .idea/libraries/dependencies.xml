@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dependencies/mysql-connector-java-8.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/commons-beanutils-1.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/jasperreports-6.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/jfoenix-9.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/TrayTester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/jasperreports-6.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/fontawesomefx-8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/mssql-jdbc-8.4.1.jre11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/charm-glisten-4.4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

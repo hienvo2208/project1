@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="paneInfor" prefHeight="583.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.InfoUserController">
+   <children>
+      <Label layoutX="12.0" layoutY="180.0" text="Thông tin chung">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Label>
+       <ImageView fx:id="imgQLDG" fitHeight="170.0" fitWidth="222.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(&quot;file:resources/images/reader.png&quot;);" />
+      <HBox layoutX="13.0" layoutY="215.0" prefHeight="31.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Mã đọc giả">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textMa" editable="false" prefHeight="27.0" prefWidth="195.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="259.0" prefHeight="31.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Ngày sinh">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <DatePicker fx:id="dateNgaySinh" disable="true" prefHeight="27.0" prefWidth="195.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="297.0" prefHeight="31.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Địa chỉ">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textDiaChi" editable="false" prefHeight="27.0" prefWidth="196.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="339.0" prefHeight="31.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="77.0" text="Email">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textEmail" editable="false" prefHeight="27.0" prefWidth="166.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="13.0" layoutY="384.0" prefHeight="31.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="77.0" text="SĐT">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textSDT" editable="false" prefHeight="27.0" prefWidth="164.0" />
+         </children>
+      </HBox>
+      <Separator layoutX="267.0" orientation="VERTICAL" prefHeight="549.0" prefWidth="13.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="283.0" layoutY="60.0" prefHeight="17.0" prefWidth="231.0" />
+      <Label layoutX="284.0" layoutY="46.0" text="Đọc giả">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font></Label>
+      <Label layoutX="282.0" layoutY="78.0" text="Tài khoản">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="304.0" layoutY="115.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Tài khoản:">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textUsername" editable="false" prefHeight="27.0" prefWidth="174.0">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="149.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Mật khẩu:">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <PasswordField fx:id="textPassword" editable="false" prefHeight="27.0" prefWidth="174.0">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></PasswordField>
+         </children>
+      </HBox>
+      <Separator layoutX="287.0" layoutY="215.0" prefHeight="2.0" prefWidth="243.0" />
+      <HBox layoutX="304.0" layoutY="231.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="140.0" text="Loại đọc giả">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textLDG" editable="false" prefHeight="27.0" prefWidth="172.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="264.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="140.0" text="Ngày lập thẻ">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textNgaylap" editable="false" prefHeight="27.0" prefWidth="174.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="297.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="140.0" text="Ngày hết hạn">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textNgayhet" editable="false" prefHeight="27.0" prefWidth="174.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="328.0" prefHeight="31.0" prefWidth="225.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="140.0" text="Tổng nợ">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font></Label>
+            <TextField fx:id="textTongNo" editable="false" prefHeight="27.0" prefWidth="174.0" />
+         </children>
+      </HBox>
+      <Separator layoutX="287.0" layoutY="365.0" prefHeight="9.0" prefWidth="243.0" />
+      <Label layoutX="286.0" layoutY="375.0" text="Giới thiệu bản thân">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAGioiThieu" editable="false" layoutX="300.0" layoutY="400.0" prefHeight="147.0" prefWidth="311.0" AnchorPane.leftAnchor="286.0" AnchorPane.topAnchor="400.0" />
+      <Label layoutX="603.0" layoutY="43.0" text="Lịch sử mượn sách" AnchorPane.leftAnchor="603.0" AnchorPane.rightAnchor="163.5" AnchorPane.topAnchor="43.0">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Label>
+      <Separator layoutX="603.0" layoutY="60.0" prefHeight="17.0" prefWidth="231.0" AnchorPane.leftAnchor="603.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="60.0" />
+      <TableView fx:id="tableLSMuon" layoutX="597.0" layoutY="88.0" prefHeight="163.0" prefWidth="255.0" AnchorPane.leftAnchor="603.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="88.0">
+        <columns>
+          <TableColumn fx:id="colMaSach" prefWidth="75.0" text="Mã sách" />
+          <TableColumn fx:id="colTenSach" prefWidth="75.0" text="Tên sách" />
+            <TableColumn fx:id="colNgayMuon" prefWidth="75.0" text="Ngày mượn" />
+            <TableColumn fx:id="colHanTra" prefWidth="75.0" text="Hạn trả" />
+            <TableColumn fx:id="colTinhTrang" prefWidth="75.0" text="Tình trạng" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="btnDoiPass" layoutX="442.0" layoutY="183.0" onAction="#btnDoiPassClicked" text="Doi mat khau" textFill="#0c86dd" visible="false" />
+      <JFXButton fx:id="btnChinhSua" layoutX="810.0" layoutY="520.0" onAction="#btnChinhSuaClicked" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: #50A7EC;" text="CHỈNH SỬA" textFill="#0d0d0d" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnLuu" layoutX="858.0" layoutY="520.0" onAction="#btnLuuClicked" style="-fx-background-color: green;" text="Luu" visible="false" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="26.0" />
+      <JFXButton fx:id="btnHuy" layoutX="810.0" layoutY="520.0" onAction="#btnHuyClicked" style="-fx-background-color: red;" text="Huy" visible="false" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="72.5" />
+      <TextField fx:id="textName" editable="false" layoutX="272.0" layoutY="5.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: transparent;" text="Nguyen Van A" AnchorPane.leftAnchor="272.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="10.0" layoutY="196.0" prefHeight="17.0" prefWidth="231.0" />
+   </children>
+</AnchorPane>

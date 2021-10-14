@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layoutBaoCao" prefHeight="540.0" prefWidth="750.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.MenuBaoCaoController">
+    <children>
+        <TabPane layoutX="-3.0" layoutY="70.0" prefHeight="470.0" prefWidth="750.0" stylesheets="@css/themes.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+            <tabs>
+                <Tab text="BÁO CÁO MƯỢN THEO THỂ LOẠI">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="286.0" prefWidth="750.0">
+                            <children>
+                                <BorderPane fx:id="borderPaneBCMuon" prefHeight="424.0" prefWidth="750.0" style="-fx-background-color: #dbdbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="BÁO CÁO SÁCH TRẢ TRỄ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <BorderPane fx:id="borderPaneBCTra" prefHeight="424.0" prefWidth="750.0" style="-fx-background-color: #dbdbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+      <AnchorPane fx:id="paneHeaderQLDG" layoutX="10.0" layoutY="14.0" prefHeight="49.0" prefWidth="730.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Label layoutX="64.0" layoutY="5.0" opacity="0.87" prefHeight="37.0" prefWidth="274.0" text="BÁO CÁO THỐNG KÊ" textFill="#3d4056">
+               <font>
+                  <Font name="Verdana" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgQLDG" fitHeight="37.0" fitWidth="48.0" layoutX="9.0" layoutY="4.0" opacity="0.69" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(&quot;file:resources/images/analytics.png&quot;);" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

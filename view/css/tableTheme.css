@@ -1,0 +1,86 @@
+.table-view, .tree-table-view {
+   !* Constants used throughout the tableview.
+   -fx-table-header-border-color: transparent;
+    -fx-table-cell-border-color: -fx-box-border;
+  -fx-background-color: transparent;
+}
+
+
+.tree-table-view .column-header {
+    -fx-size: 65;
+    -fx-border-style: null;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button*/
+{
+    -fx-background-color: transparent;*/
+}
+
+/*.table-view .column-header .label, .table-view .filler .label,*/
+.table-view .column-drag-header .label, .tree-table-view .column-header .label,
+.tree-table-view .filler .label, .tree-table-view .column-drag-header .label
+{
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .column-header-background, .tree-table-view .column-header-background
+{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell, .tree-table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-cell {
+  -fx-border-color: transparent;
+ -fx-border-width: 1;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #262626;
+    -fx-background-radius: 5 5 0 0;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #0ed9e0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #0ed9e0;
+    -fx-alignment: center;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #2b2a2a;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #262626;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}

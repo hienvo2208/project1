@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="layoutDocGia" prefHeight="540.0" prefWidth="750.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.librarian.controller.frmDocGiaController">
+    <children>
+        <AnchorPane fx:id="paneHeaderQLDG" layoutY="4.0" prefHeight="49.0" prefWidth="730.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label layoutX="64.0" layoutY="5.0" opacity="0.87" prefHeight="37.0" prefWidth="274.0" text="QUẢN LÝ ĐỘC GIẢ" textFill="#3d4056">
+                    <font>
+                        <Font name="Verdana" size="22.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="imgQLDG" fitHeight="37.0" fitWidth="48.0" layoutX="9.0" layoutY="4.0" opacity="0.69" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(&quot;file:resources/images/reader.png&quot;);" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="70.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+            <children>
+                <TabPane prefHeight="470.0" prefWidth="750.0" stylesheets="@../css/themes.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                        <Tab text="ĐỘC GIẢ">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-radius: 5;">
+                                    <children>
+                                        <BorderPane fx:id="borderPaneDocGia" prefHeight="424.0" prefWidth="750.0" style="-fx-background-color: #dbdbdb; -fx-background-radius: 0 0 5 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <bottom>
+                                                <Pane prefHeight="8.0" prefWidth="730.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0  0 5 5;" BorderPane.alignment="CENTER" />
+                                            </bottom>
+                                        </BorderPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="LOẠI ĐỘC GIẢ">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <BorderPane fx:id="borderPaneLDG" prefHeight="424.0" prefWidth="750.0" style="-fx-background-color: #dbdbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="PHIẾU PHẠT">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <BorderPane fx:id="borderPaneThuTienPhat" prefHeight="424.0" prefWidth="750.0" style="-fx-background-color: #dbdbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
